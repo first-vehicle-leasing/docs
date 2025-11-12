@@ -72,7 +72,7 @@ At least one of mobile or landline must be present.
 - `mobile` must be a valid GB mobile number.
 - `landline` must be a valid GB phone number.
 
-	Numbers are validated using GB rules; include country code where possible (e.g., +44...).
+Numbers are validated using GB rules; include country code where possible (e.g., +44...).
 
 ## Example Requests
 
