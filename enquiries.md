@@ -48,11 +48,11 @@ Send a JSON object with the fields below. Items marked Required must be provided
 | `mobile`                           | string (GB mobile) |     *    | `nullable`, **required without `landline`**                |
 | `message`                          | string             |     ✓    | free text                                                  |
 | `receive_marketing_communications` | boolean            |          | `nullable`, `boolean`                                      |
-| `vehicle_type`                     | string             |          | `nullable`, `max:10`. **Default** (if omitted): `car`.     |
+| `vehicle_type`                     | string             |          | `nullable`, `max:10`, `enum: car, light`                   |
 | `vehicle`                          | string             |          | `nullable`, `max:1024` (e.g., `BMW 320i M Sport 4dr Auto`) |
 | `cap_code`                         | string             |          | `nullable`, `max:36`                                       |
 | `cap_id`                           | number             |          | `nullable`, `numeric`                                      |
-| `lease_type`                       | number             |          | `nullable`, `numeric`                                      |
+| `lease_type`                       | number             |          | `nullable`, `numeric` , `enum: 1: personal, 2: business`   |
 | `initial_rental_in_month`          | number             |          | `nullable`, `numeric`, `min:0`                             |
 | `initial_rental`                   | number             |          | `nullable`, `numeric`, `min:0`                             |
 | `term`                             | number             |          | `nullable`, `numeric`, `min:0`                             |
